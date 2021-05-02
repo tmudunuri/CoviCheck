@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Vaccines</h1>
+<table border="1" cellpadding="10px" cellspacing="0" height="100%" width="100%" >
+	<tr>
+		<th>Center</th>
+		<th>Sessions</th>
+	</tr>
+	{% for center in data %}
+	<tr>
+		<td style="max-width:120px" align="left" valign="top" >
+			<p>{{ center['name'] }}</p>
+			<p>{{ center['pincode'] }}</p>
+			<p>Cost: {{ center['fee_type'] }}</p>
+			<p><a href="{{ center['location'] }}">Location</a></p>
+		</td>
+		<td align="left" valign="top">
+			<ol>
+				{% for session in center['sessions'] %}
+				<li>
+					<p>{{ session['date'] }}</p>
+					<p>Available: {{ session['available_capacity'] }}</p>
+					<p>Brand: {{ session['vaccine']}}</p>
+				</li>
+				{% endfor %}	
+			</ol>
+		</td>
+	</tr>
+	{% endfor %}
+</table>
+{% endblock %}
