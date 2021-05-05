@@ -18,7 +18,7 @@ Check availability of vaccines in your district / pincode and get notified via e
 5. Export your gmail credentials
 ```
 export gmail_user=<your-email-address>
-export gmail_password=<your >
+export gmail_password=<your-app-password>
 ```
 > Follow [Create App Passwords](https://support.google.com/accounts/answer/185833?hl=en)
 6. Run script
