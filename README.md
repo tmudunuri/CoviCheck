@@ -8,22 +8,24 @@ Check availability of vaccines in your district / pincode and get notified via e
 
 ### Run Locally :
 1. Open cloned directory
-`$ cd CoviCheck`
+```cd CoviCheck```
 2. Setup venv
-`$ python -m venv venv`
+```python -m venv venv```
 3. Activate venv
-`$ source venv/bin/activate`
+```source venv/bin/activate```
 4. Install dependencies
-`$ pip install -r requirements.txt`
+```pip install -r requirements.txt```
 5. Export your gmail credentials
-`$ export gmail_user=<your-email-address>`
-`$ export gmail_password=<your >`
+```
+export gmail_user=<your-email-address>
+export gmail_password=<your >
+```
 > Follow [Create App Passwords](https://support.google.com/accounts/answer/185833?hl=en)
 6. Run script
-`$ python covicheck/covicheck.py <args>`
-> See `$ python covicheck/covicheck.py --help` for usage
+```python covicheck/covicheck.py <args>```
+> See `python covicheck/covicheck.py --help` for usage
 
-### Use GCP Cloud Functions
+### Use GCP Cloud Functions:
 - Use Event-Driven Cloud Functions
 [Tutorial](https://cloud.google.com/functions/docs/tutorials/pubsub#functions-prepare-environment-python)
 > Add email credentials as runtime environment variables
