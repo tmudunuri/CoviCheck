@@ -26,8 +26,8 @@ export gmail_password=<your-app-password>
 > See `python covicheck/covicheck.py --help` for usage
 
 ### Use GCP Cloud Functions:
-- Use Event-Driven Cloud Functions
-[Tutorial](https://cloud.google.com/functions/docs/tutorials/pubsub#functions-prepare-environment-python)
+- Use Event-Driven Cloud Functions -
+[Tutorial](https://cloud.google.com/functions/docs/tutorials/pubsub#functions-prepare-environment-python)\
 *Add email credentials as runtime environment variables*
-- Upload zipped source code. See [Specifying dependencies in Python](https://cloud.google.com/functions/docs/writing/specifying-dependencies-python)  
+- Upload zipped source code.\See [Specifying dependencies in Python](https://cloud.google.com/functions/docs/writing/specifying-dependencies-python)  
 - Use Cloud Scheduler to [Create and configure a cron job](https://cloud.google.com/scheduler/docs/creating#console_1)
