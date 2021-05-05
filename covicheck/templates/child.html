@@ -10,8 +10,9 @@
 	<tr>
 		<td style="max-width:120px" align="left" valign="top" >
 			<p>{{ center['name'] }}</p>
+			<p>{{ center['address'] }}</p>
 			<p>{{ center['pincode'] }}</p>
-			<p>Cost: {{ center['fee_type'] }}</p>
+			<p>{{ center['vaccine_fees']['vaccine'] }}: ₹{{ center['vaccine_fees']['fee'] }}</p>
 			<p><a href="{{ center['location'] }}">Location</a></p>
 		</td>
 		<td align="left" valign="top">
